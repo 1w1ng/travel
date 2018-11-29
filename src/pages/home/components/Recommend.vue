@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl" />
         </div>
@@ -49,7 +49,6 @@ export default {
     overflow: hidden;
     display: flex;
     height: 1.9rem;
-    border-bottom: 1px solid #eee;
     .item-img{
       width: 1.7rem;
       height: 1.7rem;
