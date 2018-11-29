@@ -4,8 +4,8 @@
       <div class="iconfont back-icon">&#xe6fb;</div>
     </div>
     <div class="header-input">
-      <span class="iconfont">&#xe632;</span> 
-      景点/目的地/主题
+      <span class="iconfont">&#xe632;</span>
+      输入城市/景点/游玩主题
     </div>
     <div class="header-right">
       城市
@@ -35,7 +35,7 @@ export default {
         font-size: .4rem;
       }
     }
-    .header-input{
+    .header-input {
       flex: 1;
       height: .64rem;
       line-height: .64rem;
