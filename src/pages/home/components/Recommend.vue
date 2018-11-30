@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl" />
         </div>
@@ -19,28 +19,15 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/b1/b1da46b5326eb99e90.water.jpg_200x200_2f0a2f3f.jpg',
-        title: '武汉欢乐谷',
-        desc: '来试试中国最高的弹射过山车吧~'
-      },{
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-        title: '武汉海昌极地海洋公园',
-        desc: '在“海底两万里”鱼你共舞'
-      }]
-    }
-  }
+  props: {
+    list: Array
+  },
 }
 </script>
 
 <style lang="scss" scoped>
   @import '~styles/mixins.scss';
   .recommend-title{
-    margin-top: .2rem;
     line-height: .8rem;
     background: #eee;
     text-indent: .2rem;
