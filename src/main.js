@@ -7,6 +7,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.css';
 import App from './App';
 import router from './router';
+import store from './store';
 
 Vue.config.productionTip = false;
 // 解决移动端300ms点击
@@ -17,6 +18,7 @@ Vue.use(VueAwesomeSwiper);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>',
 });
